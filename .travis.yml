@@ -16,4 +16,4 @@ env:
     - secure: "DunkA4ADz9O2NErUzGRgmMj+eIDmEMmQWdqMlCZAdZry4TQxHzQo5pXOCEKr\nJtUlrg27JdzngqZ9K7Fo/jvgmykbfFPOnf3qwUohNrsYXVrWs7Zm6mDhKrFm\nZWH8VGZGlUDpMymrfq4107zDePWSl4zrrwtKFtEfFJMkn8No6D8="
 
 script:
-  - curl -s https://gist.github.com/xixx/a7c0c6da1c4d93ab968c/raw/modulefile-publish.sh | bash
+  - curl -s https://gist.github.com/xixx/a7c0c6da1c4d93ab968c/raw/publish.sh | bash
