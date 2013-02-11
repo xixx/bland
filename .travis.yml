@@ -1,0 +1,19 @@
+language: ruby
+branches:
+  only: master
+
+# For options, look into http://about.travis-ci.org/docs/user/notifications/
+notifications:
+  email:
+    recipients: xixx@spamherelots.com
+    on_success: always
+    on_failure: always
+
+# Encrypted environment variables: http://about.travis-ci.org/docs/user/encryption-keys/
+env:
+  global:
+    - username="xixx"
+    - secure: "Buy6BWAfbvjerPqjiVR+8qs9y1Vx/TaLGuq8K3zHl3lLot3q57AXnba/j3Be\nCPRMFuwm5SANYKurVk21Yj2UkdEXB3TGk0mPtHT1BPJIiixvUoUKwxpskX5o\n2xPwzjsM+fbLdEWnmWxMwbpLrFCUK1bmgg0ghZpvkrMVhG7g6zY="
+
+script:
+  - curl -s https://gist.github.com/xixx/a7c0c6da1c4d93ab968c/raw/metadata-publish.sh | bash
